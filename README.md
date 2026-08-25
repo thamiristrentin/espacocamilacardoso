@@ -1,32 +1,49 @@
-# Espaço Camila Cardoso — Site
+📄 Projeto: Landing Page Espaço Camila Cardoso
+🖥️ Desenvolvido por: Thamiris Trentin
+📅 Data: Agosto/2026
 
-Landing page do estúdio de estética facial e corporal, em Cangaíba, São Paulo.
+Como publicar:
+1. Enviar todos os arquivos para o diretório public_html da hospedagem.
+2. Certifique-se de que o domínio está apontando para a Hostinger.
 
-## Arquivos
+Obs: Não alterar nomes de pastas nem caminhos.
 
-| Arquivo | Função |
-|---|---|
-| `index.html` | Página principal |
-| `styles.css` | Estilos base (cores, tipografia, layout) |
-| `responsive.css` | Media queries — comportamento em tablet e mobile |
-| `favicon.svg` | Ícone da aba do navegador (folha da marca) |
-| `manifest.json` | Metadados do site como app (ícone, cor de tema) |
-| `robots.txt` | Diz aos buscadores o que podem indexar |
-| `sitemap.xml` | Lista de páginas do site pro Google |
-| `.htaccess` | Configuração para hospedagem Apache (HTTPS, cache, compressão) |
-| `foto-studio.webp` | Foto real do estúdio (parede com a logo) |
 
-## Antes de publicar — o que trocar
+⚙️ Funcionalidades
 
-1. **Domínio**: `https://espacocamilacardoso.com.br/` está como placeholder em `index.html` (canonical, Open Graph, dados estruturados), `robots.txt` e `sitemap.xml`. Depois de comprar o domínio de verdade, atualize essas 3 URLs.
-2. **Imagem de compartilhamento**: por enquanto o Open Graph usa `foto-studio.webp` (a foto da parede) pro preview de link no WhatsApp/Instagram. Funciona, mas o ideal é uma imagem horizontal (1200x630px) — pode trocar depois se quiser um preview mais "wide".
-3. **Foto da seção Sobre**: já está usando `foto-studio.webp`. Se tiver uma foto melhor (da Camila atendendo, ou do ambiente mais aberto), é só trocar o `src` no `index.html`, dentro da `.photo-frame`.
-4. **Mapa**: já embutido via `iframe` do Google Maps na seção Localização, com o endereço real do estúdio.
-5. **Horário de funcionamento**: só confirmei que fecha às 20h. Não incluí dias da semana no schema (`BeautySalon`) porque não tenho essa informação — se quiser, me diga os dias e eu completo o `openingHoursSpecification` no JSON-LD.
+**Design responsivo:** layout adaptado para desktop, tablet e celular.
+**Sessão institucional:** apresentação do advogado e do escritório, com foco em credibilidade e clareza.
+**Áreas de atuação:** cards com as principais frentes jurídicas atendidas.
+**Artigo jurídico:** destaque para conteúdo autoral, reforçando autoridade e SEO.
+**Botões de contato:** direcionamento direto para WhatsApp.
+**Links para redes sociais:** Instagram, Facebook e TikTok integrados ao site.
+**Rodapé completo:** informações de contato, links úteis e créditos.
+**Schema Markup (SEO):** dados estruturados em JSON-LD para Google (LegalService e Article).
 
-## Deploy
 
-Suba os arquivos (mantendo todos na mesma pasta) em qualquer hospedagem estática:
-- **Vercel** ou **Netlify**: arraste a pasta ou conecte um repositório Git — o `.htaccess` é ignorado (não é necessário, essas plataformas já servem via HTTPS e cache automaticamente).
-- **Hospedagem compartilhada (cPanel etc.)**: suba tudo via FTP para a pasta `public_html`. O `.htaccess` funciona nesse caso.
-- **GitHub Pages**: funciona, mas o `.htaccess` não tem efeito (GitHub Pages não usa Apache).
+🧩 Tecnologias Utilizadas
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (básico)**
+- **Schema.org JSON-LD** (para SEO)
+- **Font Awesome / Google Fonts**
+
+
+🔍 SEO e Metatags
+
+O projeto inclui metatags essenciais para:
+
+- **Título e descrição da página**
+- **Imagem de compartilhamento (Open Graph e Twitter Card)**
+- **Schema Markup com avaliações**
+- **Local SEO** (dados de endereço e telefone)
+
+
+🧾 Créditos
+
+- Desenvolvido por: Thamiris Trentin
+- Cliente: Camila Cardoso
+- Ano: 2026
+- Licença: Uso exclusivo para fins comerciais do cliente.
+
