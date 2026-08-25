@@ -1,0 +1,17 @@
+{
+  "name": "Espaço Camila Cardoso — Estética Facial e Corporal",
+  "short_name": "Camila Cardoso",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a130f",
+  "theme_color": "#1a130f",
+  "description": "Estúdio de estética facial e corporal em Cangaíba, São Paulo.",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
