@@ -13,6 +13,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
+html, body{overflow-x:hidden; width:100%;}
 body{
   background:var(--bg);
   color:var(--cream);
@@ -117,12 +118,14 @@ section{padding:110px 0;position:relative;}
 /* ---------- SOBRE ---------- */
 .sobre{background:var(--bg-alt);border-top:1px solid var(--card-line);border-bottom:1px solid var(--card-line);}
 .sobre-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center;}
-.photo-slot{
-  aspect-ratio:4/5;border:1px dashed var(--card-line);border-radius:var(--radius);
-  display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;
-  color:var(--ink-muted);font-size:.78rem;letter-spacing:.05em;background:
-    repeating-linear-gradient(135deg, transparent, transparent 18px, rgba(200,155,74,.05) 18px, rgba(200,155,74,.05) 19px);
+.photo-frame{
+  aspect-ratio:4/5;border:1px solid var(--card-line);border-radius:var(--radius);
+  overflow:hidden;position:relative;
 }
+.photo-frame::after{
+  content:"";position:absolute;inset:0;border:1px solid rgba(200,155,74,.25);pointer-events:none;
+}
+.photo-frame img{width:100%;height:100%;object-fit:cover;display:block;}
 .sobre-quote{
   font-family:'Fraunces',serif;font-style:italic;font-size:1.5rem;color:var(--blush);
   line-height:1.4;margin-bottom:26px;
@@ -173,11 +176,14 @@ section{padding:110px 0;position:relative;}
 .loc-item h4{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:6px;}
 .loc-item p{font-size:1rem;color:var(--cream);}
 .loc-item a.link{color:var(--blush);border-bottom:1px solid rgba(227,183,160,.4);padding-bottom:1px;}
-.map-slot{
-  aspect-ratio:1/1;border:1px dashed var(--card-line);border-radius:var(--radius);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
-  color:var(--ink-muted);text-align:center;padding:30px;
+.map-frame{
+  aspect-ratio:4/3;width:100%;border:1px solid var(--card-line);border-radius:var(--radius);
+  overflow:hidden;position:relative;
 }
+.map-frame::after{
+  content:"";position:absolute;inset:0;border:1px solid rgba(200,155,74,.25);pointer-events:none;
+}
+.map-frame iframe{width:100%;height:100%;border:0;display:block;}
 
 /* ---------- CTA FINAL ---------- */
 .cta-final{text-align:center;padding:130px 0;position:relative;}

@@ -16,7 +16,7 @@
 <meta property="og:title" content="Espaço Camila Cardoso — Estética Facial e Corporal">
 <meta property="og:description" content="Estúdio de estética facial e corporal em Cangaíba, São Paulo. Nota 5,0 no Google. Agende sua avaliação pelo WhatsApp.">
 <meta property="og:url" content="https://espacocamilacardoso.com.br/">
-<meta property="og:image" content="https://espacocamilacardoso.com.br/og-image.jpg">
+<meta property="og:image" content="https://espacocamilacardoso.com.br/foto-studio.webp">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Espaço Camila Cardoso">
 
@@ -24,7 +24,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Espaço Camila Cardoso — Estética Facial e Corporal">
 <meta name="twitter:description" content="Estúdio de estética facial e corporal em Cangaíba, São Paulo. Nota 5,0 no Google.">
-<meta name="twitter:image" content="https://espacocamilacardoso.com.br/og-image.jpg">
+<meta name="twitter:image" content="https://espacocamilacardoso.com.br/foto-studio.webp">
 
 <!-- ===== Ícones ===== -->
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -42,7 +42,7 @@
   "@context": "https://schema.org",
   "@type": "BeautySalon",
   "name": "Espaço Camila Cardoso",
-  "image": "https://espacocamilacardoso.com.br/og-image.jpg",
+  "image": "https://espacocamilacardoso.com.br/foto-studio.webp",
   "url": "https://espacocamilacardoso.com.br/",
   "telephone": "+5511947528058",
   "priceRange": "$$",
@@ -112,7 +112,9 @@
 
 <section class="sobre" id="sobre">
   <div class="wrap sobre-grid">
-    <div class="photo-slot fade-in"><img src="img/foto-studio.webp" alt=""></div>
+    <div class="photo-frame fade-in">
+      <img src="img/foto-studio.webp" alt="Parede do Espaço Camila Cardoso, estúdio de estética em Cangaíba, São Paulo" loading="lazy">
+    </div>
     <div class="sobre-text fade-in">
       <p class="sobre-quote">"A arte de realçar sem transformar."</p>
       <p>O <strong>Espaço Camila Cardoso</strong> é um estúdio de estética facial e corporal em Cangaíba, São Paulo, onde cada atendimento começa pela escuta — não pelo procedimento.</p>
@@ -240,10 +242,8 @@
       </div>
     </div>
 
-    <div class="map-slot fade-in">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
-      <span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4492.442880653304!2d-46.5297187!3d-23.505708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f44dff4a8cd%3A0x5b0d4f44a938e956!2sEspa%C3%A7o%20Camila%20Cardoso%20-%20Est%C3%A9tica%20Facial%20e%20Corporal!5e1!3m2!1spt-BR!2sbr!4v1787688951859!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><span style="font-size:.72rem;">(Av. Cangaíba, 2699 — Cangaíba, SP)</span></span>
-      <a href="https://www.google.com/maps/search/?api=1&query=Av.+Cangaíba,+2699+-+Sl+3+-+Cangaíba,+São+Paulo+-+SP,+03711-007" target="_blank" class="link" style="font-size:.85rem;">Abrir no Maps →</a>
+    <div class="map-frame fade-in">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4492.442880653304!2d-46.5297187!3d-23.505708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f44dff4a8cd%3A0x5b0d4f44a938e956!2sEspa%C3%A7o%20Camila%20Cardoso%20-%20Est%C3%A9tica%20Facial%20e%20Corporal!5e1!3m2!1spt-BR!2sbr!4v1787688951859!5m2!1spt-BR!2sbr" title="Localização do Espaço Camila Cardoso no Google Maps" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -284,7 +284,7 @@
     </div>
     <div class="foot-bottom">
       <span>© 2026 Espaço Camila Cardoso</span>
-      <span>Site desenvolvido por <a target="_blank" href="https://www.instagram.com/nortisweb/">Nortis Web</a></span>
+      <span>Site desenvolvido por Nortis Web</span>
     </div>
   </div>
 </footer>
@@ -307,7 +307,6 @@
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.15 });
-
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
 

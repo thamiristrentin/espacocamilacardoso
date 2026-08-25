@@ -33,5 +33,14 @@
 
 /* ---------- Localização: empilha texto e mapa ---------- */
 @media (max-width:820px){
-  .loc-grid{grid-template-columns:1fr;}
+  .loc-grid{grid-template-columns:1fr;gap:40px;}
+
+  /* mapa fica mais alto e "quadrado" no mobile, pra ocupar
+     melhor a largura da tela e mostrar mais contexto do bairro */
+  .map-frame{aspect-ratio:1/1;}
+}
+
+/* ---------- Telas bem estreitas (celulares pequenos) ---------- */
+@media (max-width:400px){
+  .wrap{padding:0 18px;}
 }
